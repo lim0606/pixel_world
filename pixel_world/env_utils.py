@@ -95,7 +95,7 @@ class PixelWorld(gym.Env):
         elif self.actions == '1d_vertical':
             self.action_vectors = np.array([[1,0],[-1,0]])
             self.action_space = spaces.Discrete(2)
-        if self.actions == '2d_continuous':
+        elif self.actions == '2d_continuous':
             low = np.array([-1,-1])
             high = np.array([1,1])
             self.action_space = spaces.Box(low=low,high=high,dtype=np.float32)

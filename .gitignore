@@ -1,4 +1,4 @@
-
+*.sw*
 *.pyc
 pixel_world/envs/__pycache__/pixel_world.cpython-36.pyc
 build
